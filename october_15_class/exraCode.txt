@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	const int DOZEN = 12;
+
+	const int FEET_TO_MILES = 5280;
+
+	std::cout << "How many MILES is it from TJC to your house?" << std::endl;
+	int numberOfMiles;
+	std::cin >> numberOfMiles;
+
+	//getline(cin, ) //requres a conversion from string to an int (i.e., stoi())
+
+	//std::cout << "The number of miles betweeen your house and TJC is: " << std::endl;
+
+	std::cout << "That will be this much feet: " << FEET_TO_MILES * numberOfMiles << std::endl;
+}
