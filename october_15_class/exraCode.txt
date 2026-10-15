@@ -17,3 +17,45 @@ int main()
 
 	std::cout << "That will be this much feet: " << FEET_TO_MILES * numberOfMiles << std::endl;
 }
+
+void demofeetInches()
+{
+	//The next three lines of code are used to prompt the user to enter their height.
+	//int enterTotalInches;
+	//std::cout << "Enter your height, in inches (not, however, feet inches): " << std::endl;
+	//std::cin >> totalInches; //No need to add std::endl.
+	
+	int totalInches = 70; //Variable declaration. This one uses four bytes of storage. Adding -
+	//		a value is a variable initialization.
+
+	const int NUMBER_OF_INCHES_PER_FOOt = 12; //const variables tend to be written in uppercase.
+	std::cout << totalInches << " inches is equal to " << totalInches / NUMBER_OF_INCHES_PER_FOOt << " feet";
+
+	std::cout << " and " << totalInches % NUMBER_OF_INCHES_PER_FOOt << " inches" << std::endl;
+	//Inches divided by number of inches in a foot, but will use the remainder value.
+}
+//We want variables that can change to benefit our program.
+
+void demoSocialMedia()
+{
+	int postLikeCount = 0;
+	std::cout << "Current number of likes on a post: " << postLikeCount << std::endl;
+
+	//If ten people already liked the post.
+	postLikeCount+= 10; //+=
+	std::cout << "After incrementing, like count is " << postLikeCount << std::endl;
+}
+
+void demoVarInitialization()
+{
+	int firstNumer = 5;
+	int secondNumber = 3;
+
+	int product;
+
+	product = firstNumer * secondNumber; //Putting product = to the right creates a syntax error.
+
+	int someNumber; //declaration, no initialization
+
+	someNumber = someNumber * 2; //Needs variable initialization.
+}

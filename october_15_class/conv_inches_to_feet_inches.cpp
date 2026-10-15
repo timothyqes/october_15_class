@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-int main()
+int main() 
 {
 	//The next three lines of code are used to prompt the user to enter their height.
 	//int enterTotalInches;
@@ -11,7 +11,7 @@ int main()
 	int totalInches = 70; //Variable declaration. This one uses four bytes of storage. Adding -
 	//		a value is a variable initialization.
 
-	const int NUMBER_OF_INCHES_PER_FOOt = 12;
+	const int NUMBER_OF_INCHES_PER_FOOt = 12; //const variables tend to be written in uppercase.
 	std::cout << totalInches << " inches is equal to " << totalInches / NUMBER_OF_INCHES_PER_FOOt << " feet";
 
 	std::cout << " and " << totalInches % NUMBER_OF_INCHES_PER_FOOt << " inches" << std::endl;
